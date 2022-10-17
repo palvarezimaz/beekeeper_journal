@@ -1,6 +1,7 @@
 import type { NextPage } from 'next';
 import Head from 'next/head';
-// import Link from 'next/link'
+import Link from 'next/link';
+import Layout from '../../components/layout';
 import styles from '../../styles/Home.module.css';
 
 const FirstEntry: NextPage = () => {
@@ -11,19 +12,22 @@ const FirstEntry: NextPage = () => {
 
   return (
     <div className={styles.container}>
-      <Head>
-        <title>First post!</title>
-      </Head>
+      <Layout>
+        <Head>
+          <title>First post!</title>
+        </Head>
 
-      <main className={styles.main}>
-        <h1>First post!</h1>
-        <p className={styles.description}>
-          It all started with Covid. I had to change my job, everything was
-          closed.. a neighbour couldn't keep his bees anymore, and so the story
-          starts
-        </p>
-        <p>{date}</p>
-      </main>
+        <main className={styles.main}>
+          <h1>First post!</h1>
+          <p className={styles.description}>
+            It all started with Covid. I had to change my job, everything was
+            closed.. a neighbour couldn't keep his bees anymore, and so the
+            story starts
+          </p>
+          <p>{date}</p>
+          <Link href="/">Back</Link>
+        </main>
+      </Layout>
     </div>
   );
 };

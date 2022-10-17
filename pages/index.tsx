@@ -15,6 +15,7 @@ const Home: NextPage = () => {
 
       <main className={styles.main}>
         <h1 className={styles.title}>The Beekeper's Blog</h1>
+        <Image src="/images/bee.jpg" height={200} width={144} alt="Bee" />
 
         <p className={styles.description}>
           Hi there! I'm Andrew, from Gippsland, and this is my blog. I want to
