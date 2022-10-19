@@ -4,7 +4,7 @@ import Link from 'next/link';
 import Layout from '../../components/layout';
 import styles from '../../styles/Home.module.css';
 
-const FirstEntry: NextPage = () => {
+const FirstEntry = () => {
   let currentDate: Date = new Date();
   let date: string = `${currentDate.getDate()}/${
     currentDate.getMonth() + 1

@@ -14,8 +14,7 @@ type LayoutProps = {
   home?: ReactNode;
 };
 
-const Layout: NextPage = (props: LayoutProps) => {
-  // ({ children, home }: Props) => {
+const Layout = (props: LayoutProps) => {
   return (
     <div className={styles.container}>
       <Head>
