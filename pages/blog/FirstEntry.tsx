@@ -13,10 +13,6 @@ const FirstEntry: NextPage = () => {
   return (
     <div className={styles.container}>
       <Layout>
-        <Head>
-          <title>First post!</title>
-        </Head>
-
         <main className={styles.main}>
           <h1>First post!</h1>
           <p className={styles.description}>
@@ -25,7 +21,6 @@ const FirstEntry: NextPage = () => {
             story starts
           </p>
           <p>{date}</p>
-          <Link href="/">Back</Link>
         </main>
       </Layout>
     </div>
